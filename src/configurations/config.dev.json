@@ -1,0 +1,16 @@
+{
+    "database": {
+        "connectionString": "mongodb://ritesh:ritesh@cluster0-shard-00-00-qgshe.mongodb.net:27017,cluster0-shard-00-01-qgshe.mongodb.net:27017,cluster0-shard-00-02-qgshe.mongodb.net:27017/streetmaps?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin"
+    },
+    "server": {
+        "port": 8080,
+        "jwtSecret": "secret",
+        "jwtExpiration": "1h",
+        "routePrefix": "/api",
+        "plugins": [
+            "logger",
+            "jwt-auth",
+            "swagger"
+        ]
+    }
+}

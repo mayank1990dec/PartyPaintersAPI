@@ -1,0 +1,13 @@
+{
+    "apps": [{
+        "exec_mode": "cluster",
+		"instances" : 4,
+        "script": "npm",
+        "args":"serve",
+        "name": "type-node",
+        "interpreter": "node",
+        "env": {
+            "NODE_ENV": "production"
+        }
+    }]
+}
